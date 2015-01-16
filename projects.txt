@@ -1,0 +1,41 @@
+Projects:
+
+- Linux command line:
+  - redirection & use of pipe using wget http to fetch HTML pages  
+
+- Command line app:
+  - Write a program that accpets a temperator in Celsius and returns that value in Farhenheight
+
+- Parse and evaluate:
+  - Write a program that prompts the user for an arithmetic expression. Parse and evaluate it 
+  returning the result. eg: "23 * 4.3". All operators, well formed input
+
+- Number guessing game
+  - Write a program that generates a random number using random.randint(1, 100) and allow the user to guess it. 
+   Keep going until the user guesses the number. Enhance with ability to count # of guesses or give up
+
+- Address Book App:
+   - Create a command processor style program that allows you to:
+      - store a contact name, contact phone #
+      - add, remove and list contact entries
+      - for extra credit: update, find, save to disk file, reload from disk (make your own file data format)
+      you can use standard web formats like JSON or XML if you like
+      - have your program be able to read the JSON formatted address books in the github repo
+      - when you have save and load implemented, and a common data format between different student implementations,
+      exchange data files with another student and see if you can read their address book (eg: sneaker net, email)
+      - share files via web using JSON api hosted on my machine. The API has: publish, list, get methods
+      - change your program to publish their address books to my server & get / list
+      - add more fields to your address book schema, error checking (ie: receiving data some clients wont understand)
+      - add twitter handle & gravatar images for email
+      - change output to HTML file to display in browser instead of just command line (so we can see pictures)
+      - change to use Jinja2 to generate HTML instead of writing HTML in Python code
+      - Make a web app version using BottlePy
+
+- A simple game:
+   - Create a command processer style program (or graphic program using graphics.py). 
+   - Single player / multi-player turn based
+   - Text or graphics output
+   - Ideas: tic-tac-toe, battleship, card games, dice games, hangman, go fish, word games (using the wordlist on github)
+   - Brainstorm, design on paper first, build it, have fun, be creative.
+   
+   
