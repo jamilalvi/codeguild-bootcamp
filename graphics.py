@@ -161,7 +161,11 @@ except:
    import Tkinter as tk
 
 
-from PIL import Image, ImageTk
+# Import PIL if we have it
+try:
+   from PIL import Image, ImageTk
+except ImportError:
+   pass
 
 
 ##########################################################################
