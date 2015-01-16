@@ -4,9 +4,18 @@ Some practice problems in Python:
 
 Function Problems:
 
-1. Write a function that accepts a list of numbers and updates each element in the list with its value multipled by 2 
+1. Write a function that accepts a list of numbers and updates each element in the list with its value multipled by 2. 
+Given an example input of: [2, 8, 0, 23]  your function would update the list to be: [4, 16, 0, 46]
 
 2. Write a function that accepts a list of numbers and returns a new list containing each input number plus 10
+Given an example input of: [10, 30, 36]  your function should return a new list with the values: [20, 40, 46]
 
-3. Write a function that accepts 4 arguments as follows: int, int, string, int. The function should add the first two arguments, then subtract the 4th argument and return a string containing the 3rd argument followed by the result. An example result value might look like "This is the result: 235"
+3. Write a function that accepts 4 arguments as follows: int, int, string, int. The function should add the first two arguments, then subtract the 4th argument and return a string containing the 3rd argument followed by the result. 
+Given an example input of: 8, 16, "This is the result:", 5  your function return the string: "This is the result: 19"
+Use string formatting to make the returned string
+
+
+File Problems:
+
+1. Write a function that reads words from the word-list.txt file, and returns the number of words that begin with the letter 'g' and also the number of words that begin with the letters 'st'
 
