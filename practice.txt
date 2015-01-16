@@ -1,0 +1,12 @@
+Some practice problems in Python:
+
+
+
+Function Problems:
+
+1. Write a function that accepts a list of numbers and updates each element in the list with its value multipled by 2 
+
+2. Write a function that accepts a list of numbers and returns a new list containing each input number plus 10
+
+3. Write a function that accepts 4 arguments as follows: int, int, string, int. The function should add the first two arguments, then subtract the 4th argument and return a string containing the 3rd argument followed by the result. An example result value might look like "This is the result: 235"
+
