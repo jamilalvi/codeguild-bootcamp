@@ -30,6 +30,7 @@ Projects:
       - change output to HTML file to display in browser instead of just command line (so we can see pictures)
       - change to use Jinja2 to generate HTML instead of writing HTML in Python code
       - Make a web app version using BottlePy
+      - Store your address book into mongoDb using mongolab.com or compose.io
 
 - A simple game:
    - Create a command processer style program (or graphic program using graphics.py). 
