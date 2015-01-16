@@ -1,3 +1,9 @@
+## 
+## For documentation on this library see: 
+##   http://mcsp.wartburg.edu/zelle/python/graphics/graphics/index.html
+##
+## 
+
 from graphics import *
 
 def main():
