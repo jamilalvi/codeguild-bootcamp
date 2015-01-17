@@ -1,5 +1,13 @@
 Some practice problems in Python:
 
+Conditional Problems:
+
+1. Write a function that accepts a string and returns a string as follows:
+   - if the input string is 1 or 2 characters in length, return the string: "The string is small"
+   - if the input string between 3 and 7 characters in length, return the string: "The string is large"
+   - if the input string between 8 characters in length and contains a 'd', return the string: "The string is large with a d"
+   - otherwise, return the string: "That's quite unusual"
+   
 
 Function Problems:
 
@@ -13,6 +21,15 @@ Given an example input of: [10, 30, 36]  your function should return a new list 
 arguments, then subtract the 4th argument and return a string containing the 3rd argument followed by the result. 
 Given an example input of: 8, 16, "This is the result:", 5  your function return the string: "This is the result: 19"
 Use string formatting to make the returned string
+
+4. Memoization: Create a function that accepts as arguments 2 numbers, adds them together, caches that result and then returns 
+the result. If you then call the function again with the same arguments, return the cached value. Your implementation
+should use a closure (return a nested function).
+
+5. Write a recursive function accepts an integer 'n' argument and calculates the first 'n' numbers of the Fibonacci sequence.
+Return the sequence as a list. Make two versions: one recursive and the other non-recursive
+
+6. Write a function that accepts an integer 'n' argument and returns the first 'n' prime numbers as a list.
 
 
 File Problems:
