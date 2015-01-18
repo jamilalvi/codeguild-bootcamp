@@ -1,5 +1,6 @@
 Some practice problems in Python:
 
+===================================================================
 Conditional Problems:
 
 1. Write a function that accepts a string and returns a string as follows:
@@ -9,6 +10,7 @@ Conditional Problems:
    - otherwise, return the string: "That's quite unusual"
    
 
+===================================================================
 Function Problems:
 
 1. Write a function that accepts a list of numbers and updates each element in the list with its value multipled by 2. 
@@ -29,9 +31,10 @@ should use a closure (return a nested function).
 5. Write a recursive function accepts an integer 'n' argument and calculates the first 'n' numbers of the Fibonacci sequence.
 Return the sequence as a list. Make two versions: one recursive and the other non-recursive
 
-6. Write a function that accepts an integer 'n' argument and returns the first 'n' prime numbers as a list.
+6. Write a function that accepts an integer 'n' argument and returns the first 'n' prime numbers as a list. You can 
+create a helper function to determine primality
 
-
+===================================================================
 File Problems:
 
 1. Write a function that reads words from the word-list.txt file, and returns the number of words that begin 
@@ -39,4 +42,33 @@ with the letter 'g' and also the number of words that begin with the letters 'st
 
 2. Write a function that reads words from the word-list.txt file (which is sorted in alphabetical order) and creates a 
 new file named 'reversed-words.txt' containing the words in revserse alphabetical order. 
+
+===================================================================
+Git Workflow Example:
+
+===================================================================
+Exception Handling:
+
+===================================================================
+Web Application Debugging
+
+===================================================================
+Extending Python with C
+
+===================================================================
+Classes:
+
+===================================================================
+Data Structures Problems:
+
+1. Write a function that accepts a variable number of lists of numbers and returns a new list
+containing all the combination of all the input lists with the numbers sorted in decending order
+
+===================================================================
+Looping, Generators and Iterators Problems:
+
+===================================================================
+HTTP Protocol Problems:
+
+
 
