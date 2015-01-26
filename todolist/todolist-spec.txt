@@ -47,7 +47,10 @@
       For example, if I wanted to create a todo item but assign it to a student named 'sally jones', my todo item might 
       contain something like: 
       
-      "Do not forget to pick me up after work @sallyj". 
+      "Do not forget to pick me up after work @sallyj".  
+      
+      Note: I want to be able to specify who should complete the todo item inside the body of the todo item
+      text by embedding their @username. I shouldn't have to be prompted for it.
       
       Todo items assigned to someone else get stored to that student's to-do list stored in the cloud not in your own. 
       Next time they 'load' their todo list, they will see all their items and all items assigned to them by other
@@ -60,13 +63,31 @@
       11. Implement a 'load' command that fetches your to-do list from cloud storage. Items loaded from cloud 
       storage should replace anything currently stored in memory.       
       
-      
       12. Use at least some exception handling to handle errors and make the code robust against invalid data. 
       Think about what constitutes invalid data.      
       
       13. For every command that generates output, have an alternate output view as a static HTML file of the 
       displayed data (can be viewed using the file:/// protocol). If you have assigned todo items to another user 
-      or have received todo items from another user, display that user's gravatar beside that item.       
+      or have received todo items from another user, display that user's gravatar beside that item.      
+      If you don't want to write static HTML output, use one of the Python GUI libraries (such as tkinter or 
+      wxpython) and build a desktop GUI for it.
       
       14. Support adding small attachments to the todo item      
+      
+      #15. Be able to load the test data I'll provide
+
+
+Some help on object oriented design skills:
+- http://www.itmaybeahack.com/book/oodesign-python-2.1/html/index.html
+- http://learnpythonthehardway.org/book/ex43.html
+- http://csis.pace.edu/~bergin/papers/OOAD.html
+- https://atomicobject.com/resources/oo-programming/introduction-motivation-for-oo
+- http://sdmeta.gforge.inria.fr/FreeBooks/GuzdialBookDrafts/DesignObjects-ch4.pdf
+- http://cs.slu.edu/~fritts/CSCI290_F13/assignments/hw03.html
+- http://www.python-course.eu/python3_object_oriented_programming.php
+- http://www.slideshare.net/ashokguduru/object-oriented-design-part1-31424339
+- http://www.slideshare.net/neetuangelmishra/ppt-12735983
+- http://code.tutsplus.com/tutorials/solid-part-1-the-single-responsibility-principle--net-36074
+- http://zeroturnaround.com/rebellabs/object-oriented-design-principles-and-the-5-ways-of-creating-solid-applications/
+
 
