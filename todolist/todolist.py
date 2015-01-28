@@ -23,7 +23,7 @@ class TodoItem(object):
    STATUS_NEW = 'new'
    STATUS_COMPLETE = 'done'
    
-   def __init__(self, text, owner, due_date_days_ahead=None):
+   def __init__(self, text, owner=None, due_date_days_ahead=None):
       '''Create a new TodoItem.
       parameters:
       text: todo text
@@ -34,6 +34,8 @@ class TodoItem(object):
       due date.'''
 
       self._todo_text = text
+      
+      # Will be None if owned by me
       self._owner = owner
       self._creation_date = datetime.datetime.today()
       
@@ -42,14 +44,19 @@ class TodoItem(object):
       
       # Validate any supplied due date
       if due_date_days_ahead is None:
-         self._due_date = None 
-         
-      # Save the due date 
-      if due_date_days_ahead >= 0:
-         self._due_date = self._creation_date + datetime.timedelta(days=1)
+         self._due_date = None
       else:
-         # Throw an error
-         raise ValueError("Due date cannot be in the past")
+         # Save the due date 
+         if due_date_days_ahead >= 0:
+            self._due_date = self._creation_date + datetime.timedelta(days=1)
+         else:
+            # Throw an error
+            raise ValueError("Due date cannot be in the past")
+         
+         
+   def __str__(self):
+      dueInfo = 'due: ' + str(self._due_date) if self._due_date else 'no due date' 
+      return "ToDoItem: {0}, ({1})".format(self._todo_text, dueInfo)
          
    def mark_complete(self):
       ''''Mark this to-do item as complete'''
@@ -92,11 +99,6 @@ class TodoItem(object):
 
    
    
-   
-   
-   
-
-
 
 
 class TodoListFileStorage(object):
