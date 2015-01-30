@@ -4,28 +4,52 @@ from pymongo import MongoClient
 from bson.objectid import ObjectId
 import pprint
 
+# Mongo docs: http://docs.mongodb.org/manual/core/crud-introduction/
 
 def mongo_test():
 
-   # Connection url
-   MONGOHQ_URL = "mongodb://codeguild:AsecretPassw00rd@dharma.mongohq.com:10023/qscfadm"
-         
+   # Connection url to server includes username, password & database
+   MONGOHQ_URL = 'xxxxxxxxxxxxxxxxxxxx'
+
    # Connect
    client = MongoClient(MONGOHQ_URL)
     
-   # Specify the database
+   # Specify the database. Attributes dynamically added to client object
    db = client.qscfadm
 
-   # Use the codeguild collection
-   collection = db.codeguild
-   count = collection.count()
+   # Print all the collection names in this db
+   pprint.pprint(db.collection_names())
 
-   print "The number of documents you have in this collection is:", count
+   
+   # Use the codeguild collection. Can also use db["codeguild"]
+   collection = db.codeguild
+   print "The number of documents you have in this collection is:", collection.count()
      
    # Find by id
-   #print collection.find_one({'_id': ObjectId('54bf02c0fcf43411146f4e77')})
+   pprint.pprint(collection.find_one({'_id': ObjectId('54bf02c0fcf43411146f4e77')}))
+
    
    # Get the to-do list user collection
-   print collection.find_one({'docname': "todo-user-list"})
+   pprint.pprint(collection.find_one({'docname': "todo-user-list"}))
+   
+   # Create a new document
+   monster = {
+      "name": "Martians",
+      "occupation": "Alien abductions",
+      "tags": ["little", "green", "men", "outer-space"],
+      "date": datetime.datetime.utcnow()
+   }
+    
+   # Insert the monster document into the collection
+   monster_id = collection.insert(monster)
+   
+   # Print out all our documents where there is an occupation key
+   for monster in collection.find({"occupation" : {'$exists' : True}} ):
+      pprint.pprint(monster)
+   
+   
+   
+   
+   
    
 mongo_test()
