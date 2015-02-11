@@ -6,7 +6,9 @@ Weather billboard app:
    
    - You should first be able to display your output to the console (for test & debug) and to a log file (for 
    application logging & monitoring), but the main display should be an HTML file (styled with CSS  
-   with optional JS) that represents the billboard display. 
+   with optional JS) that represents the billboard display. Generate the HTML using the Jinja2 template
+   engine ~ you could also just push data into the HTML view and generate the display using Javascript 
+   if you wish.
    
    - Make the output look as good as you can (search for 'weather app' on images.google.com for ideas) according 
    to your skill in HTML & CSS. You can use these icons: 
@@ -18,13 +20,13 @@ Weather billboard app:
    
    - Try to show weather change over a time span (eg: a day or week) or a weekly forecast for the locations.
 
-   -	Display information about weather conditions for 1 or 2 weeks ahead
+   - Display information about weather conditions for 1 or 2 weeks ahead
    
-   -	If weather for more than one city is selected, have a way to cycle between the displays for the city (either automatically or manually)
+   - If weather for more than one city is selected, have a way to cycle between the displays for the city (either automatically or manually)
 
-   -	The display should be attractive and work well on devices of all sizes (check google images for “weather app” for inspiration)
+   - The display should be attractive and work well on devices of all sizes (check google images for “weather app” for inspiration)
 
-   -	The displayed data should always be current – the user should not have to refresh the view to get current conditions. You 
+   - The displayed data should always be current – the user should not have to refresh the view to get current conditions. You 
    can do this by writing some JavaScript to have the page refresh itself periodically.
    
    - Locations in the forecast.io API are specified by lat / long, but users of your program will want to specify
