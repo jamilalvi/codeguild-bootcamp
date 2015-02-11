@@ -1,0 +1,66 @@
+Weather billboard app:
+ 
+ Create a python app that displays a weather information billboard for a set of up to 3 locations. 
+ 
+   - The billboard should refresh itself every few minutes with up to date weather information. 
+   
+   - You should first be able to display your output to the console (for test & debug) and to a log file (for 
+   application logging & monitoring), but the main display should be an HTML file (styled with CSS  
+   with optional JS) that represents the billboard display. 
+   
+   - Make the output look as good as you can (search for 'weather app' on images.google.com for ideas) according 
+   to your skill in HTML & CSS. You can use these icons: 
+   
+      http://erikflowers.github.io/weather-icons/ if you wish
+      http://superdevresources.com/free-weather-icon-sets-apps/
+   
+   or find and 'borrow' some other weather related imagery. Be creative. Make it pretty. Make it animate
+   
+   - Try to show weather change over a time span (eg: a day or week) or a weekly forecast for the locations.
+
+   -	Display information about weather conditions for 1 or 2 weeks ahead
+   
+   -	If weather for more than one city is selected, have a way to cycle between the displays for the city (either automatically or manually)
+
+   -	The display should be attractive and work well on devices of all sizes (check google images for “weather app” for inspiration)
+
+   -	The displayed data should always be current – the user should not have to refresh the view to get current conditions. You 
+   can do this by writing some JavaScript to have the page refresh itself periodically.
+   
+   - Locations in the forecast.io API are specified by lat / long, but users of your program will want to specify
+   locations using city names. How will you solve this problem?
+   
+   - Get your weather data from the forecast.io weather API. Create a free account there and do some tests with the 
+   API to see what data you can fetch and to understand their data format. Please write your own
+   API wrapper class for the service. (Don't abuse the API)
+   
+   - Configure the cities / locations for which to display weather by making a simple command line program that manages
+   the application configuration (eg: weather-config.py). This application configuration should be persisted to a file.
+   When the user changes the configuration and saves it, the billboard should display this updated information. One thing
+   this program should probably do is lookup lat-long coords given a city name.
+   
+   - One should be able to type a command such as: python weather-billboard.py which should start the app.
+   This should periodically query the forecast.io API to pull latest weather conditions for the configured cities
+   and then generate a static HTML file (linked to your stylesheets and JS). This static file is served from your
+   local webserver.
+   
+   - Write your app in an object-oriented style. Use modules to organize your code
+   
+   - Store everything in git. Create a new subdirectory in your repo. Push daily to github.
+      
+   - Use PEP8 standards for naming, doc strings and plenty of comments explaining 
+   how you implemented your code
+   
+   - Do a design session in class before writing any code. You are responsible for creating and
+   keeping up to date your design document which describes the purpose of your app, requirements,
+   limitations, assumptions and how it works.
+   
+   - Some libraries you might need include: logging, urllib2, requests*, Jinja2*.
+   
+   - It is expected that most if not all of your code for this project will be original work. Please initially avoid the
+   temptation to copy & paste the work of others or just import and use existing libraries for fetching weather
+   data; the more code you write, the better programmer you'll become.
+   
+   - There are some collaborative pieces here (city -> lat long). You could pair up and write python modules to solve 
+   those problems. Publish those modules on your github repos so other students can use them
+   

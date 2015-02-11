@@ -1,0 +1,36 @@
+Countdown Timer:
+ 
+ Create an HTML / CSS / JS page that displays a countdown timer
+ 
+   - The user should be able to enter a value of minutes and seconds into two input boxes and then 
+   select a 'Start' button which starts the timer. The timer then counts down to zero at which point it
+   ends.
+   
+   - Have 'Pause' and 'Restart' buttons that pause the timer or restarts it using the current values.
+   
+   - Make sure to validate the input data
+   
+   - Be creative with displaying the countdown. You could:
+      - display an animation in a <canvas> that changes as the timer decreases
+      - use <svg> to display vector graphics of an analog clock face counting down
+      - play sounds at specific intervals in the countdown 
+      - flash the screen / play an animation when the timer reaches zero.
+      - animate objects in the DOM during the countdown
+   
+   - Serve the page from your local webserver
+   
+   - Think carefully about how to organize your code. Don't litter the program with global variables (use at 
+   most 1 global). Modularize your code.
+   
+   - Store everything in git. Create a new subdirectory in your repo. Push daily to github.
+      
+   - Comment your Javascript code
+   
+   - Do a design session in class before writing any code. You are responsible for creating and
+   keeping up to date your design document which describes the purpose of your app, requirements,
+   limitations, assumptions and how it works.
+
+   - It is expected that most if not all of your code for this project will be original work. Please initially avoid the
+   temptation to copy & paste the work of others; the more code you write yourself, the better programmer you'll become.
+   
+   

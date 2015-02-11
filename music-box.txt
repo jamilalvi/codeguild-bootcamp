@@ -1,0 +1,28 @@
+Music Box app:
+ 
+ Create a HTML / CSS / Javascript page that displays some controls that allow the user to compose simple melodies.
+ 
+   - Every control should be mapped to an audio file (I have some of these already)
+   
+   - A click on a control should play an audio file at a particular pitch.
+   
+   - Apply appropriate styles to make the display look fun and appealing 
+   
+   - Map the controls to keyboard keys so that tapping a key plays the corresponding audio file
+   
+   - Implement a feature to record the keystrokes so the melody can be played back later.
+   
+   - Think carefully about how to organize your code. Don't litter the program with global variables (use at 
+   most 1 global). Modularize your code.
+   
+   - Serve the app from your local webserver
+   
+   - Store everything in git. Create a new subdirectory in your repo. Push daily to github.
+   
+   - Do a design session in class before writing any code. You are responsible for creating and
+   keeping up to date your design document which describes the purpose of your app, requirements,
+   limitations, assumptions and how it works.
+   
+   - It is expected that most if not all of your code for this project will be original work. Please initially avoid the
+   temptation to copy & paste the work of others; the more code you write yourself, the better programmer you'll become.
+   
