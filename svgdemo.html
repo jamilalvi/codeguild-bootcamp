@@ -9,6 +9,7 @@
       <path id="b"  fill="red" stroke="none" stroke-width="0"/>
    </svg>
 <script>
+   /* Generate an SVG path describing an arc <= 180 degrees */
    var generateWedgeString = function(startX, startY, startAngle, endAngle, radius, as) {
         var x1 = startX + radius * Math.cos(Math.PI * startAngle/180);
         var y1 = startY + radius * Math.sin(Math.PI * startAngle/180);
@@ -20,20 +21,24 @@
         var pathString = "M"+ startX + " " + startY + " L" + x1 + " " + y1 + " A" + radius + " " + radius + sweepdir + x2 + " " + y2 + " z";
         return pathString;
     };
-   //console.log(s);
+
+
    
+   // Keep track of timer ticks
    var count = 0;
    
    var timerId = setInterval(function() {
       var sv = document.getElementsByTagName("svg")[0];
       
       if(count < 180) {
+         // Fill in the bottom half circle
          var s = generateWedgeString(80, 50, 0, count +10, 50, true);
          //sv.innerHTML  = '<path id="bottom" d="' + s + '" fill="red" stroke="none" stroke-width="0" />';
          var bPath = document.getElementById("b");
          bPath.setAttribute("d", s);
       }
       else {
+         // Fill in the top half circle
          var s = generateWedgeString(80, 50, 180, count +10, 50, true);
          //sv.innerHTML  = '<path d="' + s + '" fill="red" stroke="none" stroke-width="0" />';
          var tPath = document.getElementById("t");
