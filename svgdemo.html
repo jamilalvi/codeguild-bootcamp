@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+   <h1>Svg Test</h1>
+   <svg width="600" height="800">
+      <path id="t"  fill="red" stroke="none" stroke-width="0"/>
+      <path id="b"  fill="red" stroke="none" stroke-width="0"/>
+   </svg>
+<script>
+   var generateWedgeString = function(startX, startY, startAngle, endAngle, radius, as) {
+        var x1 = startX + radius * Math.cos(Math.PI * startAngle/180);
+        var y1 = startY + radius * Math.sin(Math.PI * startAngle/180);
+        var x2 = startX + radius * Math.cos(Math.PI * endAngle/180);
+        var y2 = startY + radius * Math.sin(Math.PI * endAngle/180);
+        
+        var sweepdir = as ? " 0 0 1 " : " 1 0 0";
+        
+        var pathString = "M"+ startX + " " + startY + " L" + x1 + " " + y1 + " A" + radius + " " + radius + sweepdir + x2 + " " + y2 + " z";
+        return pathString;
+    };
+   //console.log(s);
+   
+   var count = 0;
+   
+   var timerId = setInterval(function() {
+      var sv = document.getElementsByTagName("svg")[0];
+      
+      if(count < 180) {
+         var s = generateWedgeString(80, 50, 0, count +10, 50, true);
+         //sv.innerHTML  = '<path id="bottom" d="' + s + '" fill="red" stroke="none" stroke-width="0" />';
+         var bPath = document.getElementById("b");
+         bPath.setAttribute("d", s);
+      }
+      else {
+         var s = generateWedgeString(80, 50, 180, count +10, 50, true);
+         //sv.innerHTML  = '<path d="' + s + '" fill="red" stroke="none" stroke-width="0" />';
+         var tPath = document.getElementById("t");
+         tPath.setAttribute("d", s);
+      }
+      
+      count += 10;
+      
+      if(count >= 360)
+         clearInterval(timerId);
+
+      console.log(s);
+   }, 100);
+
+</script>
+</body>
+</html>
+
+
+
