@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Calculator</title>
+      
+      <style>
+         #result  {
+            font-size: 14px;
+            transition: width 1.3s;
+         }  
+         
+         #result:hover {
+            font-size: 24px;
+         }
+      </style>
+      
+      <script src="jscalc.js"></script>
+      <script>
+      /* 
+         Add functionality as follows :
+         - buttons for subtract, multiply, divide
+         - error checking for valid inputs
+         - display errors by highlighting the field with the error
+         - styling of the form and output to make it attractive.
+      */
+      </script>
+
+	</head>
+	<body>
+   
+      <form id="calcform" name="calculator" method="post">
+         <p>Number: <input type=text name="input_a" size=10></p>
+         <p>Number: <input type=text name="input_b" size=10></p>
+         <p>
+            <input type="button" value="Add" name="addbutton" title="Click to add">
+            <input type="button" value="Subtract" name="subbutton" title="Click to subtract">
+         </p>
+         <p>
+            <input type="reset" value="Reset Form" name="clearbutton">
+         </p>
+         <p>Result: <div id="result"></div></p>
+      </form>
+      
+	</body>
+</html>
+
