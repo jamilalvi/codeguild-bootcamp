@@ -1,0 +1,71 @@
+<!doctype HTML>
+<html>
+<head>
+<style>
+   #div1 {
+      width: 350px;
+      height:270px;
+      padding:10px;
+      border:1px solid #c24545;
+   }
+</style>
+</head>
+<body>
+   <p>Drag images into the rectangle:</p>
+   <div id="div1"></div>
+   <br>
+   <img id="drag1" src="testimg.jpg" draggable="true">
+   <img id="drag2" src="recbut.png" draggable="true">
+   <img id="drag3" src="larrow.png" draggable="true">
+   <br>
+   <button id="go">Go</button>
+   
+   <script>
+      "use strict";
+      document.addEventListener("DOMContentLoaded", init);
+      
+      function init() {
+         var count = 0;
+         
+         // Get all the image tags & attach dragstart event handler
+         var elts = document.getElementsByTagName('img');
+         [].forEach.call(elts, function(elt) {
+            elt.addEventListener('dragstart', function(e) {
+               //e.target.style.opacity = '0.5';
+               e.dataTransfer.setData("text", e.target.id);
+            });
+         });
+         
+         // Setup the drop target events
+         var dropTarget = document.getElementById("div1");
+         dropTarget.addEventListener('dragover', function(e) {
+            e.preventDefault();
+         });
+         
+         dropTarget.addEventListener('drop', function(ev) {
+            ev.preventDefault();
+            
+            // Get the id & element we are dropping
+            var data = ev.dataTransfer.getData("text");
+            var droppingElt = document.getElementById(data);
+            //droppingElt.style.opacity = "1.0";
+            
+            // Copy the node & give it a unique id
+            var newElt = droppingElt.cloneNode();
+            newElt.id = newElt.id + count;
+            count++;
+            
+            //newElt.style.opacity = "1.0";
+            ev.target.appendChild(newElt);
+         });
+         
+         document.getElementById("go").addEventListener('click', function() {
+            [].forEach.call(dropTarget.childNodes, function(elt) {
+               alert(elt.id);
+            });
+         });
+         
+      }
+   </script>
+</body>
+</html>
