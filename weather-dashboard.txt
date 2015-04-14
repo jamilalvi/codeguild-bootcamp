@@ -27,9 +27,11 @@ The Weather billboard app:
 
    - Display information about weather conditions for 1 or 2 weeks ahead
    
-   - If weather for more than one city is selected, have a way to cycle between the displays for the city (either automatically or manually)
+   - If weather for more than one city is selected, have a way to cycle between the displays 
+   for the city (either automatically or manually)
 
-   - The display should be attractive and work well on devices of all sizes (check google images for "weather app" for inspiration)
+   - The display should be attractive and work well on devices of all sizes (check google images for 
+   "weather app" for inspiration)
 
    - The displayed data should always be current;  the user should not have to refresh the view to get current conditions. You 
    can do this by writing some JavaScript to have the page refresh itself periodically.
@@ -53,7 +55,8 @@ The Weather billboard app:
    
    - Write your app in an object-oriented style. Use modules to organize your code
    
-   - Write your code in a new directory with a Python virtual environment. Store everything in git. Create a new subdirectory in your repo. Push daily to github.
+   - Write your code in a new directory with a Python virtual environment. Store everything in git. 
+   Create a new subdirectory in your repo. Push daily to github.
       
    - Use PEP8 standards for naming, doc strings and plenty of comments explaining 
    how you implemented your code
@@ -65,8 +68,9 @@ The Weather billboard app:
    - Some libraries you might need include: logging, urllib2, requests*, Jinja2*.
    
    - It is expected that most if not all of your code for this project will be original work. Please initially avoid the
-   temptation to copy & paste the work of others (eg: off Stack Overflow) or just import and use existing libraries for fetching weather
-   data; the more code you write, the better programmer you'll become - you're not solving the problem for me...
+   temptation to copy & paste the work of others (eg: off Stack Overflow) or just import and use existing 
+   libraries for fetching weather data; the more code you write, the better programmer you'll 
+   become - it's not important to solve the problem as easily as possible...
    
    - There are some collaborative pieces here (city -> lat long). You could pair up and write python modules to solve 
    those problems. Publish those modules on your github repos so other students can use them
