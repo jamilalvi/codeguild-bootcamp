@@ -1,7 +1,10 @@
-Weather billboard app:
+The Weather billboard app:
  
  Create a python app that displays a weather information billboard for a set of up to 3 locations. 
  
+   - This can be a hybrid Python / HTML / CSS app or just a command line app (with appropriate modifications
+   for the display part).
+   
    - The billboard should refresh itself every few minutes with up to date weather information. 
    
    - You should first be able to display your output to the console (for test & debug) and to a log file (for 
@@ -16,7 +19,9 @@ Weather billboard app:
       http://erikflowers.github.io/weather-icons/ if you wish
       http://superdevresources.com/free-weather-icon-sets-apps/
    
-   or find and 'borrow' some other weather related imagery. Be creative. Make it pretty. Make it animate
+   or find and 'borrow' some other weather related imagery. Be creative. Make it pretty. Make it animate. 
+   If you don't want to use HTML & CSS for the display, display the output in the command window or
+   use the graphics.py package.
    
    - Try to show weather change over a time span (eg: a day or week) or a weekly forecast for the locations.
 
@@ -24,9 +29,9 @@ Weather billboard app:
    
    - If weather for more than one city is selected, have a way to cycle between the displays for the city (either automatically or manually)
 
-   - The display should be attractive and work well on devices of all sizes (check google images for “weather app” for inspiration)
+   - The display should be attractive and work well on devices of all sizes (check google images for "weather app" for inspiration)
 
-   - The displayed data should always be current – the user should not have to refresh the view to get current conditions. You 
+   - The displayed data should always be current;  the user should not have to refresh the view to get current conditions. You 
    can do this by writing some JavaScript to have the page refresh itself periodically.
    
    - Locations in the forecast.io API are specified by lat / long, but users of your program will want to specify
@@ -48,7 +53,7 @@ Weather billboard app:
    
    - Write your app in an object-oriented style. Use modules to organize your code
    
-   - Store everything in git. Create a new subdirectory in your repo. Push daily to github.
+   - Write your code in a new directory with a Python virtual environment. Store everything in git. Create a new subdirectory in your repo. Push daily to github.
       
    - Use PEP8 standards for naming, doc strings and plenty of comments explaining 
    how you implemented your code
@@ -60,9 +65,11 @@ Weather billboard app:
    - Some libraries you might need include: logging, urllib2, requests*, Jinja2*.
    
    - It is expected that most if not all of your code for this project will be original work. Please initially avoid the
-   temptation to copy & paste the work of others or just import and use existing libraries for fetching weather
-   data; the more code you write, the better programmer you'll become.
+   temptation to copy & paste the work of others (eg: off Stack Overflow) or just import and use existing libraries for fetching weather
+   data; the more code you write, the better programmer you'll become - you're not solving the problem for me...
    
    - There are some collaborative pieces here (city -> lat long). You could pair up and write python modules to solve 
    those problems. Publish those modules on your github repos so other students can use them
+
+
    
