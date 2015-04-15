@@ -3,7 +3,7 @@ import csv
 from pymongo import MongoClient
 
 # Compose.io url
-MONGOHQ_URL = "mongodb://codeguild2:pleese-keep-secret@dharma.mongohq.com:10023/qscfadm"
+MONGOHQ_URL = "mongodb://codeguild2:xxxxxxxxxx@dharma.mongohq.com:10023/qscfadm"
 
 
 def get_storage_class(format):
